@@ -1,7 +1,7 @@
 main() {
      printf("\\a: (\a)\n");
      printf("abc\\b: (abc\b)\n");
-     printf("abc\n");     	/* Ctrl-Q Ctrl-H */
+     printf("abc\n");		/* Ctrl-Q Ctrl-H */
      printf("\\e: (\e)\n");
      printf("\\f: (\f)\n");
      printf("\\n: (\n)\n");
@@ -55,7 +55,7 @@ main() {
      printf("\\12: (\12)\t \\xA: (\xA)\n");
      printf("--------------------\n");          
      printf("\\13: (\13)\t \\xB: (\xB)\n");   /* \v */
-     printf("\\14: (\14)\t \\xC: (\xC)\n");   /* \\f */
+     printf("\\14: (\14)\t \\xC: (\xC)\n");   /* \f */
      printf("--------------------\n");     
      printf("\\15: (\15)\t \\xD: (\xD)\n");   /* \r */
      printf("--------------------\n");          
@@ -63,24 +63,24 @@ main() {
      printf("\\17: (\17)\t \\xF: (\xF)\n");
      printf("\\18: (\18)\n");		      /* \1 and 8 */
      printf("\\19: (\19)\n");		      /* \1 and 9 */
-     printf("\\20: (\20)\t\ \x10: (\x10)\n"); /* date line escape */
-     printf("\\21: (\21)\t\ \x11: (\x11)\n"); /* device control 1 */
-     printf("\\22: (\22)\t\ \x12: (\x12)\n"); /* dc2 */
-     printf("\\23: (\23)\t\ \x13: (\x13)\n"); /* dc3 */
-     printf("\\24: (\24)\t\ \x14: (\x14)\n"); /* dc4 */
-     printf("\\25: (\25)\t\ \x15: (\x15)\n");
-     printf("\\26: (\26)\t\ \x16: (\x16)\n");
-     printf("\\27: (\27)\t\ \x17: (\x17)\n");
+     printf("\\20: (\20)\t \\x10: (\x10)\n"); /* date line escape */
+     printf("\\21: (\21)\t \\x11: (\x11)\n"); /* device control 1 */
+     printf("\\22: (\22)\t \\x12: (\x12)\n"); /* dc2 */
+     printf("\\23: (\23)\t \\x13: (\x13)\n"); /* dc3 */
+     printf("\\24: (\24)\t \\x14: (\x14)\n"); /* dc4 */
+     printf("\\25: (\25)\t \\x15: (\x15)\n");
+     printf("\\26: (\26)\t \\x16: (\x16)\n");
+     printf("\\27: (\27)\t \\x17: (\x17)\n");
      printf("\\28: (\28)\n");	/* \2 and 8 */
      printf("\\29: (\29)\n");	/* \2 and 9 */
-     printf("\\30: (\30)\t\ \x18: (\x18)\n"); 
-     printf("\\31: (\31)\t\ \x19: (\x19)\n");
-     printf("\\32: (\32)\t\ \x1A: (\x1A)\n");
-     printf("\\33: (\33)\t\ \x1B: (\x1B)\n");
-     printf("\\34: (\34)\t\ \x1C: (\x1C)\n");
-     printf("\\35: (\35)\t\ \x1D: (\x1D)\n");
-     printf("\\36: (\36)\t\ \x1E: (\x1E)\n");
-     printf("\\37: (\37)\t\ \x1F: (\x1F)\n");
+     printf("\\30: (\30)\t \\x18: (\x18)\n"); 
+     printf("\\31: (\31)\t \\x19: (\x19)\n");
+     printf("\\32: (\32)\t \\x1A: (\x1A)\n");
+     printf("\\33: (\33)\t \\x1B: (\x1B)\n");
+     printf("\\34: (\34)\t \\x1C: (\x1C)\n");
+     printf("\\35: (\35)\t \\x1D: (\x1D)\n");
+     printf("\\36: (\36)\t \\x1E: (\x1E)\n");
+     printf("\\37: (\37)\t \\x1F: (\x1F)\n");
      printf("\\38: (\38)\n");	/* \3 and 8 */
      printf("\\39: (\39)\n");	/* \3 and 9 */
 
@@ -237,6 +237,6 @@ main() {
 
      printf("'\\0' : %d\n", '\0');
      printf("'\\0' : x%x\n", '\0');
-     printf("'0' : %d\n", '0');
-     printf("'0' : x%x\n", '0');
+     printf("'0'  : %d\n", '0');
+     printf("'0'  : x%x\n", '0');
 }
