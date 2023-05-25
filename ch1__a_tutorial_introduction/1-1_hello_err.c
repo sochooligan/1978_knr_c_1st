@@ -1,4 +1,5 @@
-main() {
+main()
+{
      printf("hello, world
      ");
 }
