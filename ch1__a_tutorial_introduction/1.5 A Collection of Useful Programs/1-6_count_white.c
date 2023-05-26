@@ -6,7 +6,6 @@ main()    /* count blanks, tabs, and newlines */
      int c;
 
      n_white = 0;
-     
      while (EOF != (c = getchar()))
 	  if (' ' == c || '\t' == c || '\n' == c)
 	       ++n_white;
