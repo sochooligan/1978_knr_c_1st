@@ -10,10 +10,10 @@ main()
      in_blank = NO;
      while (EOF != (c = getchar()))
 	  if (' ' != c) {
-	       putchar(c);
-	       if (YES == in_blank)
+	       putchar(c);	    /* print non-blank character */
+	       if (YES == in_blank) /* end in_blank, if already in it */
 		    in_blank = NO;
-	  } else if (NO == in_blank) {
+	  } else if (NO == in_blank) { /* print first blank */
 	       putchar(c);
 	       in_blank = YES;
 	  }
