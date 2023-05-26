@@ -1,7 +1,6 @@
 
 /* print Celsius-Fahrenheit table
      for c = -30, -25, -20, ..., 100 */
-
 main()
 {
      int lower, upper, step;
