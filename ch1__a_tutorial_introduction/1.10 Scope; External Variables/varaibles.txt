@@ -1,0 +1,9 @@
+local variables:
+     defined in a function;
+     dynamic local variables  <=> automatic variables
+     static local variables  <=> static variables
+
+external variables:
+     defined external to all functions, that is in file;
+     globally accessible, also called global variables;
+     existence permanently;
