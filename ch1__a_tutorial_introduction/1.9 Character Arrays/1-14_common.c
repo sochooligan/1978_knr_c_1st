@@ -4,10 +4,10 @@ getline_kr(s, lim)    /* get line into s, return length */
 char s[];
 int lim;
 {
-     int c, i, nl;
+     int c, i, len;
 
      /* each line end with '\n'; supposed each line's length is less than n */
-     for (i=0, nl=0; EOF!=(c=getchar()) && '\n'!=c; ++nl) {
+     for (i=0, len=0; EOF!=(c=getchar()) && '\n'!=c; ++len) {
 	  if (i<lim-1) {
 	       s[i] = c;
 	       ++i;
@@ -17,11 +17,11 @@ int lim;
      if ('\n' == c) {
        s[i] = '\n';
        ++i;       
-       ++nl;
+       ++len;
      }
 	 
      s[i] = '\0';
-     return nl;
+     return len;
 }
 
 copy(s1, s2)    /* copy s1 to s2; assume s2 bit enough */
