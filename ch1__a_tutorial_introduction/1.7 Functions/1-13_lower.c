@@ -1,4 +1,3 @@
-
 lower(c)
 char c;     
 {
