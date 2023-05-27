@@ -1,0 +1,33 @@
+
+
+printf
+    is actually a general-purpose format conversion functions
+
+    its first argument is a string
+      of characters to be printed,
+
+      with each % sign indicating
+        where one of the other argument(second, third, ...)
+	is to be substituted,
+	and what form it is to be printed in.
+
+    %4.0f    floating point number
+    	     at least fout characters wide
+	     no digits after the decimal point
+	     
+    %6f      floating point number
+             at least six characters wide
+
+    %.2f     floating point number
+    	     requests two places after the decimal point
+
+    %f       merely says to print the number as floating point
+
+    %d       print as decimal integer
+    %o       print as octal
+    %x       print as hex
+
+    %c	     print as charater
+    %s	     print as string
+
+    %%	     print % itself
