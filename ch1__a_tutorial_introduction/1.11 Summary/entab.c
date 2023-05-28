@@ -28,12 +28,11 @@ main()
 	  } else {
 	       if (YES == inblank) {
 		    inblank = NO;
+		    for (i = 0; i < blank_count; ++i) {
+			 putchar('-'); /* us - as a space */
+		    }
+		    blank_count = 0;
 	       }
-	       
-	       for (i = 0; i < blank_count; ++i) {
-		    putchar('-'); /* us - as a space */		 		 
-	       }
-	       blank_count = 0;
 	       
 	       putchar(c);	       
 	  }
